@@ -1,0 +1,40 @@
+body
+{
+    font-family: sans-serif;
+    margin:0;
+	overflow:none;
+}
+#nav-bar
+{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.navbar
+{
+    background-image:linear-gradient(to right, #66ccff, #3399ff);
+    padding: 10 !important;
+}
+.navbar-toggler
+{
+    outline: none;
+}
+#context
+{
+    background-image:linear-gradient(to right, #66ccff, #3399ff);
+    padding: 50px 0;
+	background-size: 100% 100%;
+	height: 100%;
+}
+.main-title
+{
+    font-size: 40px;
+    font-weight: 500;
+    margin-top: 0 !important;
+}
+.signup-title
+{
+    font-size: 35px;
+    font-weight: 500;
+    margin-top: 5px;
+}

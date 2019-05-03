@@ -1,0 +1,121 @@
+<html>
+<head>
+<title>Sign up Here!</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+    
+<body>
+<section id="nav-bar">
+    <nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" href="index.php">Language Go!</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="searchpeople.php">Find people</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="signup.html">Sign up</a>
+      </li>
+      <li class="nav-item">
+            <a class="nav-link" href="signin.html">Sign in</a>
+        </li>
+    
+      
+    </ul>
+  </div>
+</nav>
+    
+</section>
+    
+
+<!--Main sign up form -->
+<section id="context">
+    <div class="container">
+    <div class="row">
+    <div class="col-md-6">
+    <p class="signup-title">Sign up for your account here!</p>
+    <form method="post"  action="signup.php">
+        
+  <div class="form-group">
+    <label for="InputEmail1">Email address</label>
+    <input type="email" class="form-control" name="InputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+        
+  <div class="form-group">
+    <label for="firstnameinput1">First name</label>
+      <input name= "firstname" type="text" class="form-control" placeholder="First name">
+        </div>
+        
+  <div class="form-group">
+    <label for="lastnameinput1">Last Name</label>
+      <input name= "lastname" type="text" class="form-control" placeholder="Last name">
+        </div><br/>
+        
+  <div class="form-group">
+    <label for="langteachinput1">Will you be Learning or Teaching?</label>
+      <select class ="custom-select" name ="role">
+        <option value="1">Learning</option>
+        <option value="2">Teaching</option>
+      </select>
+        </div>
+		
+		<div class="form-group">
+    <label for="search-person">Language: </label>
+            <select class="custom-select" name="language">
+                <option selected>Select language</option>
+                <option value="1">French</option>
+                <option value="2">German</option>
+                <option value="3">English</option>
+                <option value="4">Chinese</option>
+                <option value="5">Portugese</option>
+            </select>
+        </div>
+		
+        <div class="form-group">
+    <label for="descriptioninput1">Description</label>
+		<small id="descHelp" class="form-text text-muted">Write a short description about yourself and your goals for coming to this website. </small>
+      <input name = "description" type="text" class="form-control" placeholder="Description">
+        </div>
+		
+  <div class="form-group">
+    <label for="usernameinput1">Username</label>
+      <input type="text" class="form-control" name="username" placeholder="Username">
+        </div>
+  <div class="form-group">
+    <label for="Password1">Password</label>
+    
+	<input type="password" class="form-control" name="pword" placeholder= "Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+  </div>
+    
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+        
+    
+        
+    </div><!---col-md-6--->   
+    </div><!---row--->  
+    </div><!---container--->  
+    
+    
+    
+    </section>
+    
+    
+    
+    
+    
+</body>
+</html>
